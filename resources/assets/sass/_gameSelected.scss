@@ -1,0 +1,176 @@
+#game-selected {
+
+  background: #e4e0e0;
+
+  box-sizing: content-box;
+      width: 100%;
+      padding: 0 15px 0 8px;
+      overflow: auto;
+
+
+  h1 {
+    color: #ffffff;
+    background: #2a3e46;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 300;
+    padding: 5px 0;
+  }
+
+  .game-selected-container {
+    background: white;
+    padding: 15px;
+    margin-bottom: .5rem;
+    position: relative;
+
+    .close-btn {
+      position: absolute;
+      top: 81px;
+      right: 13px;
+      cursor: pointer;
+
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    .bet-container {
+      margin-bottom: 0.5rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .bet-chosen {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        .teamChozen {
+          font-size:.9rem;
+          font-weight: 700;
+          margin-right: 5px;
+          text-transform: capitalize;
+        }
+      }
+
+      .wager-type {
+        font-weight: 300;
+        font-size: 0.8em;
+        text-transform: capitalize;
+      }
+    }
+
+    .match-container {
+      display: flex;
+      flex-direction: column;
+
+      .game {
+        color: #406371;
+        font-size: 0.7em;
+
+      }
+
+      .match-time {
+        font-size: 0.7em;
+        font-weight: 300;
+        color: gray;
+      }
+    }
+
+    .wager-amount {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      margin-top:.5rem;
+      padding:0 15px;
+
+      .group-risk {
+        position: relative;
+
+        input[type="number"] {
+          color: #162b3d;
+          height: 30px;
+          width: 130px;
+          border-radius: 5px;
+          text-align: left;
+          padding-left: 50px;
+          font-weight: 600;
+        }
+
+        span {
+          position: absolute;
+          top: 8px;
+          left: 11px;
+          color: #8c9194;
+          font-size: 0.6em;
+        }
+      }
+
+      .group-winbox {
+        text-align: right;
+        position: relative;
+        padding: 1px 0;
+        border: 1px solid #9e9595;
+        background: #f2f2f2;
+        height: 30px;
+        width: 130px;
+        border-radius: 5px;
+
+        h5 {
+          color: #162b3d;
+          font-size: 0.9em;
+          position: relative;
+          top: 7px;
+          right: 33px;
+          font-weight: 600;
+        }
+
+        span {
+          position: absolute;
+          top: 8px;
+          left: 11px;
+          color: #8c9194;
+          font-size: 0.6em;
+        }
+      }
+    }
+  }
+
+  .wager-confirmation-container {
+    background: #162b3d;
+    color: #d6d6d6;
+    padding: 15px;
+
+    .confirmation-group {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 0.5rem;
+    }
+
+    button {
+      background: #406371;
+      font-size: 1rem;
+      text-align: center;
+      max-width: 100%;
+      width: 100%;
+      padding: 15px 0;
+      color: white;
+      font-weight: 100;
+      letter-spacing: 2px;
+      border: none;
+      margin-bottom: 1rem;
+      border-radius: 3px;
+      margin-top: 1rem;
+      -webkit-box-shadow: 0 16px 52px -21px rgba(84,136,143,1);
+      -moz-box-shadow: 0 16px 52px -21px rgba(84,136,143,1);
+      box-shadow: 0 16px 52px -21px rgba(84,136,143,1);
+
+      &:hover {
+        background: #45798e;
+      }
+    }
+  }
+}
