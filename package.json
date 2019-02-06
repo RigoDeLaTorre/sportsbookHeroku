@@ -1,8 +1,8 @@
 {
-  "name": "Toku",
+  "name": "sportsbook",
   "version": "4.1.0",
   "adonis-version": "4.1.0",
-  "description": "Social network built with AdonisJS",
+  "description": "sportsbook",
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
