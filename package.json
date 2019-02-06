@@ -10,7 +10,8 @@
     "dev:webpack": "webpack --mode development --env.NODE_ENV=dev",
     "build:webpack": "webpack --mode production --env.NODE_ENV=production",
     "watch": "gulp",
-    "proxy": "gulp watch-proxy"
+    "proxy": "gulp watch-proxy",
+    "heroku-postbuild": "npm run build:webpack"
   },
   "keywords": [
     "adonisjs",
@@ -79,5 +80,8 @@
   },
   "autoload": {
     "App": "./app"
+  },
+  "engines": {
+    "node": "11.7.0"
   }
 }
